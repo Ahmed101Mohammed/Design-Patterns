@@ -29,4 +29,14 @@ export abstract class Duck
   {
     this.flyBehavior.fly()
   }
+
+  setFlyBehavior(flyBehavior: FlyBehavior)
+  {
+    this.flyBehavior = flyBehavior
+  }
+
+  setQuackBehavior(quackBehavior: QuackBehavior)
+  {
+    this.quackBehavior = quackBehavior
+  }
 }

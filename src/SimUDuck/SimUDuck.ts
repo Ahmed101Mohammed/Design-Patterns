@@ -1,7 +1,9 @@
 import { Decoy } from "./duck/Decoy.js";
 import { Mallard } from "./duck/Mallard.js";
+import { Model } from "./duck/Model.js";
 import { Redhead } from "./duck/Redhead.js";
 import { Rubber } from "./duck/Rubber.js";
+import { RocketPowered } from "./fly/implementation/RocketPowered.js";
 
 function main():void
 {
@@ -30,6 +32,14 @@ function main():void
   decoy.display();
   decoy.performFly();
   decoy.performQuack();
+
+  console.log("---------")
+
+  const model = new Model();
+  model.display();
+  model.performFly();
+  model.setFlyBehavior(new RocketPowered());
+  model.performFly();
 }
 
 main();
