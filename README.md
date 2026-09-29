@@ -7,8 +7,8 @@ can use them as a reference if you want.
 
 ## The Patterns:
 
-### Stratigy Pattern
-The following are examples on **Stratigy Pattern**:  
+### Strategy Pattern
+The following are examples on **Strategy Pattern**:  
 | Implementation                             | OOD diagram                                              |
 |--------------------------------------------|----------------------------------------------------------|
 | [**SimUDuck**](./src/SimUDuck/)            | [**SimUDuck**](./src/SimUDuck/documentation/)            |
