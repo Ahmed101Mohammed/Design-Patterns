@@ -9,7 +9,14 @@ can use them as a reference if you want.
 
 ### Stratigy Pattern
 The following are examples on **Stratigy Pattern**:  
-| Implementation                  | OOD diagram                                             |
-|---------------------------------|---------------------------------------------------------|
-| [**SimUDuck**](./src/SimUDuck/) | [**SimUDuck**](./src/SimUDuck/documentation/)           |
-|                                 | [**AdventureGame**](./src/AdventureGame/documentation/) |
+| Implementation                            | OOD diagram                                             |
+|-------------------------------------------|---------------------------------------------------------|
+| [**SimUDuck**](./src/SimUDuck/)           | [**SimUDuck**](./src/SimUDuck/documentation/)           |
+|                                           | [**AdventureGame**](./src/AdventureGame/documentation/) |
+| [**PaymentSystem**](./src/PaymentSystem/) |                                                         |
+
+### Observer Pattern
+The following are examples on **Observer Pattern**:  
+| Implementation                             | OOD diagram                                              |
+|--------------------------------------------|----------------------------------------------------------|
+| [**Weather-ORama**](./src/Weather-O-Rama/) | [**Weather-ORama**](./src/Weather-O-Rama/documentation/) |
