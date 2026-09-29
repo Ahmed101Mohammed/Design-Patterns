@@ -22,12 +22,8 @@ export class Weather implements Subject
 
   notifyObservers(): void
   {
-    const temperature = this.temperature;
-    const humidity = this.humidity;
-    const pressure = this.pressure;
-
     this._observers.forEach(
-      observer => observer.update(temperature, humidity, pressure)
+      observer => observer.update()
     );
   }
 

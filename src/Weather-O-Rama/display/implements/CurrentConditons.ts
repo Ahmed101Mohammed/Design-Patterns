@@ -1,22 +1,18 @@
 import { Observer } from "../Observer.js";
 import { Display } from "../Display.js";
-import { Subject } from "../../Weather/Subject.js";
+import { Weather } from "../../Weather/Weather.js";
 
 export class CurrentConditions implements Observer, Display
 {
-  private _temperature: number = 10;
-  private _humidity: number = 1.2;
-  private _pressure: boolean = true;
+  private _weather: Weather
 
-  private _weather: Subject
-
-  constructor(weather: Subject)
+  constructor(weather: Weather)
   {
     this._weather = weather;
     this.weather.registerObserver(this);
   }
 
-  set weather(weather: Subject)
+  set weather(weather: Weather)
   {
     this._weather = weather;
   }
@@ -26,52 +22,23 @@ export class CurrentConditions implements Observer, Display
     return this._weather;
   }
 
-  update(temperature: number, humidity: number, pressure: boolean)
+  update()
   {
-    this.temperature = temperature;
-    this.humidity = humidity;
-    this.pressure = pressure;
     this.display();
-  }
-
-  set temperature(temperature: number)
-  {
-    this._temperature = temperature;
-  }
-
-  set humidity(humidity: number)
-  {
-    this._humidity = humidity;
-  }
-
-  set pressure(pressure: boolean)
-  {
-    this._pressure = pressure;
   }
 
   display(): void
   {
+    const temprature = this.weather.temperature;
+    const humidity = this.weather.humidity;
+    const pressure = this.weather.pressure;
+
     console.log(`
       --- Current Conditions ---
-      Temp: ${this.temperature} C
-      Humidity: ${this.humidity}
-      Pressure: ${this.pressure ? 'UP' : 'DOWN'}  
+      Temp: ${temprature} C
+      Humidity: ${humidity}
+      Pressure: ${pressure ? 'UP' : 'DOWN'}  
     `)
-  }
-
-  get temperature(): number
-  {
-    return this._temperature;
-  }
-
-  get humidity(): number
-  {
-    return this._humidity;
-  }
-
-  get pressure(): boolean
-  {
-    return this._pressure;
   }
 
 }

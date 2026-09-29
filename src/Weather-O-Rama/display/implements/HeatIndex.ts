@@ -1,4 +1,4 @@
-import { Subject } from "../../Weather/Subject.js";
+import { Weather } from "../../Weather/Weather.js";
 import { Display } from "../Display.js";
 import { Observer } from "../Observer.js";
 
@@ -7,15 +7,15 @@ export class HeatIndex implements Observer, Display
   private _temprature: number = 0;
   private _humedity: number = 0;
 
-  private _weather: Subject
+  private _weather: Weather = new Weather();
   
-  constructor(weather: Subject)
+  constructor(weather: Weather)
   {
-    this._weather = weather;
+    this.weather = weather;
     this.weather.registerObserver(this);
   }
 
-  set weather(weather: Subject)
+  set weather(weather: Weather)
   {
     this._weather = weather;
   }
@@ -25,10 +25,10 @@ export class HeatIndex implements Observer, Display
     return this._weather;
   }
 
-  update(temprature: number, humidity: number, pressure: boolean): void 
+  update(): void 
   {
-    this.temprature = temprature;
-    this.humedity = humidity;
+    this.temprature = this.weather.temperature;
+    this.humedity = this.weather.humidity;
 
     this.display();
   }

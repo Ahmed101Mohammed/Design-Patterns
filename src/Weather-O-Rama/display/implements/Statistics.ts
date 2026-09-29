@@ -1,6 +1,6 @@
 import { Observer } from "../Observer.js";
 import { Display } from "../Display.js";
-import { Subject } from "../../Weather/Subject.js";
+import { Weather } from "../../Weather/Weather.js";
 
 export class Statistics implements Observer, Display
 {
@@ -8,15 +8,15 @@ export class Statistics implements Observer, Display
   private _humidities: number[] = [];
   private _pressures: boolean[] = [];
 
-  private _weather: Subject
+  private _weather: Weather = new Weather();
 
-  constructor(weather: Subject)
+  constructor(weather: Weather)
   {
-    this._weather = weather;
+    this.weather = weather;
     this.weather.registerObserver(this);
   }
 
-  set weather(weather: Subject)
+  set weather(weather: Weather)
   {
     this._weather = weather;
   }
@@ -26,11 +26,11 @@ export class Statistics implements Observer, Display
     return this._weather;
   }
 
-  update(temperature: number, humidity: number, pressure: boolean)
+  update()
   {
-    this.temperature = temperature;
-    this.humidity = humidity;
-    this.pressure = pressure;
+    this.temperature = this.weather.temperature;
+    this.humidity =  this.weather.humidity;
+    this.pressure = this.weather.pressure;
     this.display();
   }
 

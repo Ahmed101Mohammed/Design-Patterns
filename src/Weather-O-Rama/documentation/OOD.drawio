@@ -1,11 +1,11 @@
 <mxfile host="65bd71144e">
     <diagram id="1T1sYVhqRtILlGnHGAwi" name="Page-1">
-        <mxGraphModel dx="763" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="923" dy="658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="N6wrCuvUN9H7_OHdRiGQ-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Weather O Rama" vertex="1">
-                    <mxGeometry height="370" width="1320" x="200" y="130" as="geometry"/>
+                    <mxGeometry height="450" width="1320" x="190" y="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="N6wrCuvUN9H7_OHdRiGQ-53" edge="1" parent="N6wrCuvUN9H7_OHdRiGQ-1" source="N6wrCuvUN9H7_OHdRiGQ-2" style="edgeStyle=none;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1.002;exitY=0.125;exitDx=0;exitDy=0;exitPerimeter=0;endArrow=block;endFill=1;" target="N6wrCuvUN9H7_OHdRiGQ-12">
                     <mxGeometry relative="1" as="geometry"/>
@@ -33,17 +33,26 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="N6wrCuvUN9H7_OHdRiGQ-6" parent="N6wrCuvUN9H7_OHdRiGQ-1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Weather" vertex="1">
-                    <mxGeometry height="60" width="440" x="40" y="240" as="geometry"/>
+                    <mxGeometry height="150" width="440" x="40" y="240" as="geometry"/>
                 </mxCell>
                 <mxCell id="N6wrCuvUN9H7_OHdRiGQ-82" parent="N6wrCuvUN9H7_OHdRiGQ-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="void setMeasurments(number tempreture, number humidity, boolean pressure)" vertex="1">
                     <mxGeometry height="30" width="440" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="jZdP9TXOU4EsIRkxPcBk-1" parent="N6wrCuvUN9H7_OHdRiGQ-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="number getTemprature()" vertex="1">
+                    <mxGeometry height="30" width="440" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="jZdP9TXOU4EsIRkxPcBk-2" parent="N6wrCuvUN9H7_OHdRiGQ-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="number getHumidity()" vertex="1">
+                    <mxGeometry height="30" width="440" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="jZdP9TXOU4EsIRkxPcBk-3" parent="N6wrCuvUN9H7_OHdRiGQ-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="boolean getPressure()" vertex="1">
+                    <mxGeometry height="30" width="440" y="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="N6wrCuvUN9H7_OHdRiGQ-12" parent="N6wrCuvUN9H7_OHdRiGQ-1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;i&amp;gt; Observer" vertex="1">
                     <mxGeometry height="60" width="390" x="490" y="40" as="geometry">
                         <mxRectangle height="30" width="110" x="330" y="40" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="N6wrCuvUN9H7_OHdRiGQ-13" parent="N6wrCuvUN9H7_OHdRiGQ-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="void update(number temperature, number humidity, boolean pressure)" vertex="1">
+                <mxCell id="N6wrCuvUN9H7_OHdRiGQ-13" parent="N6wrCuvUN9H7_OHdRiGQ-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="void update()" vertex="1">
                     <mxGeometry height="30" width="390" y="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="N6wrCuvUN9H7_OHdRiGQ-45" edge="1" parent="N6wrCuvUN9H7_OHdRiGQ-1" source="N6wrCuvUN9H7_OHdRiGQ-19" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;dashed=1;" target="N6wrCuvUN9H7_OHdRiGQ-12">
