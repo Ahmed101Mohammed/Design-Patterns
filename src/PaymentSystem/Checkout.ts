@@ -1,32 +1,21 @@
+import { PaymentMethod } from "./PaymentMethod/PaymentMethod.js";
+
 export class Checkout {
 
-  private instapayUsername: string = ""
-  private cardNumber: string = ""
+  private paymentMethod: PaymentMethod
 
-  setInstaPayUsername(instapayUsername: string)
+  constructor(PaymentMethod: PaymentMethod)
   {
-    this.instapayUsername = instapayUsername
+    this.paymentMethod = PaymentMethod
   }
 
-  setCardNumber(cardNumber: string)
+  setPaymentMethod(paymentMethod: PaymentMethod): void
   {
-    this.cardNumber = cardNumber
+    this.paymentMethod = paymentMethod
   }
 
-  pay(method: string, amount: number): void
+  pay(amount: number): void
   {
-    switch(method)
-    {
-      case 'Instapay':
-        console.log(`I will pay ${amount} EGP using '${this.instapayUsername}'`)
-        break
-      case 'CreditCard':
-        console.log(
-          `I will pay ${amount} EGP using your card number '${this.cardNumber}'`
-        )
-        break
-      default:
-        console.log("Bro, don't kidding me :-(")
-    }
+    this.paymentMethod.pay(amount)
   }
 }

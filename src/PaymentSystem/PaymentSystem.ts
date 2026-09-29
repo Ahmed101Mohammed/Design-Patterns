@@ -1,16 +1,16 @@
 import { Checkout } from "./Checkout.js";
+import { CreditCard } from "./PaymentMethod/implements/CreditCard.js";
+import { Instapay } from "./PaymentMethod/implements/Instapay.js";
 
 function main():void
 {
-  const checkout = new Checkout()
-  
-  checkout.setCardNumber("8888 33333 2222 1110")
-  checkout.pay('CreditCard', 1000)
+  const instaPay = new Instapay('ahmed@instapay');
+  const checkout = new Checkout(instaPay);
+  checkout.pay(2000);
 
-  console.log("--------------------")
-
-  checkout.setInstaPayUsername("ali@instapay")
-  checkout.pay('Instapay', 2000)
+  const creditCard = new CreditCard('1234-1234-1234-1234');
+  checkout.setPaymentMethod(creditCard);
+  checkout.pay(2000);
 
 }
 
