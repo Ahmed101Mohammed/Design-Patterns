@@ -17,6 +17,7 @@ The following are examples on **Stratigy Pattern**:
 
 ### Observer Pattern
 The following are examples on **Observer Pattern**:  
-| Implementation                             | OOD diagram                                              |
-|--------------------------------------------|----------------------------------------------------------|
-| [**Weather-ORama**](./src/Weather-O-Rama/) | [**Weather-ORama**](./src/Weather-O-Rama/documentation/) |
+| Implementation                              | OOD diagram                                                                                      |
+|---------------------------------------------|--------------------------------------------------------------------------------------------------|
+| [**Weather-O-Rama**](./src/Weather-O-Rama/) | [**Weather-O-Rama**](./src/Weather-O-Rama/documentation/)                                        |
+|                                             | [**FactoryProductionMonitoringSystem**](./src/FactoryProductionMonitoringSystem//documentation/) |
