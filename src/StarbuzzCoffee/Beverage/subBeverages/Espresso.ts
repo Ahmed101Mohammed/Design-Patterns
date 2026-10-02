@@ -4,11 +4,12 @@ export class Espresso extends Beverage
 {
   constructor() 
   {
-    super("Espresso Coffee");
+    super();
+    this._description = "Espresso Coffee";
   }
 
   cost(): number 
   {
-    return super.cost() + 1.99;
+    return 1.99;
   }
 }

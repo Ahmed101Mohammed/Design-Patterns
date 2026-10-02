@@ -4,11 +4,12 @@ export class HouseBlend extends Beverage
 {
   constructor()
   {
-    super("House Blend Coffee");
+    super();
+    this._description = "House Blend Coffee";
   }
 
   cost(): number 
   {
-    return super.cost() + 1;
+    return 0.89;
   }
 }

@@ -4,11 +4,12 @@ export class DarkRoast extends Beverage
 {
   constructor() 
   {
-    super("Dark Roast Coffee");
+    super();
+    this._description = 'Dark Roast Coffee';
   }
 
   cost(): number 
   {
-    return super.cost() + 0.05;
+    return 0.99;
   }
 }

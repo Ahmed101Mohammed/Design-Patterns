@@ -4,10 +4,12 @@ export class Decaf extends Beverage
 {
   constructor() 
   {
-    super("Decaf Coffee");
+    super();
+    this._description = 'Decaf Coffee';
   }
+
   cost(): number 
   {
-    return super.cost() + 1.05;
+    return 1.05;
   }
 }
