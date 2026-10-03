@@ -17,7 +17,13 @@ The following are examples on **Strategy Pattern**:
 
 ### Observer Pattern
 The following are examples on **Observer Pattern**:  
-| Implementation                              | OOD diagram                                                                                                |
-|---------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [**Weather-O-Rama**](./src/Weather-O-Rama/) | [**Weather-O-Rama**](./src/Weather-O-Rama/documentation/OOD.png)                                           |
-|                                             | [**Factory Production Monitoring System**](./src/FactoryProductionMonitoringSystem//documentation/OOD.png) |
+| Implementation                              | OOD diagram                                                                                               |
+|---------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| [**Weather-O-Rama**](./src/Weather-O-Rama/) | [**Weather-O-Rama**](./src/Weather-O-Rama/documentation/OOD.png)                                          |
+|                                             | [**Factory Production Monitoring System**](./src/FactoryProductionMonitoringSystem/documentation/OOD.png) |
+
+### Decorator Pattern
+The following are examples on **Decorator Pattern**:
+| Implementation                              | OOD diagram                                                                                               |
+|---------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| [**StarbuzzCoffee**](./src/StarbuzzCoffee/) | [**StarbuzzCoffee**](./src/Weather-O-Rama/documentation/OOD.png)                                          |
