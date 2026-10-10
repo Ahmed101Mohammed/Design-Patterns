@@ -26,4 +26,8 @@ The following are examples on **Observer Pattern**:
 The following are examples on **Decorator Pattern**:
 | Implementation                              | OOD diagram                                                                                               |
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [**StarbuzzCoffee**](./src/StarbuzzCoffee/) | [**StarbuzzCoffee**](./src/Weather-O-Rama/documentation/OOD.png)                                          |
+| [**StarbuzzCoffee**](./src/StarbuzzCoffee/) | [**StarbuzzCoffee**](./src/StarbuzzCoffee/documentation/OOD.png)                                          |
+
+### Composed Patterns
+The following are examples that contain a composition of patterns:
+- Smart Document Processing System. [Diagram](./src/SmartDocumentProcessingSystem/documentation/OOD.md)
