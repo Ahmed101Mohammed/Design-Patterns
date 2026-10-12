@@ -1,4 +1,4 @@
-import { Pizza } from "../Pizza.js";
+import { Pizza } from "../../Pizza.js";
 
 export class CheesePizza implements Pizza
 {

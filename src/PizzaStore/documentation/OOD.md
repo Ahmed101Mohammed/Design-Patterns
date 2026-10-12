@@ -1,8 +1,9 @@
 ```mermaid
 classDiagram
-
+IngredientFactor <-- Pizza
+Pizza <|.. NYCheesePizza
+Pizza <|.. CairoCheesePizza
 Pizza <|.. CheesePizza
-Pizza <|.. GreekPizza
 Pizza <|.. PepperoniPizza
 
 class Pizza {
@@ -13,22 +14,34 @@ class Pizza {
   box()
 }
 
-class PizzaFactory {
-  Pizza createPizza()
-}
-namespace Factory {
-  class PizzaFactory
-}
-Pizza <-- PizzaFactory
+%% ---
+
+PizzaStore <|-- NYStylePizzaStore 
+PizzaStore <|-- CairoStylePizzaStore
 
 class PizzaStore {
-  Pizza orderPizza()
-}
-namespace clients {
-  class PizzaStore
-  class OtherClients
+  <<abstract>>
+
+  orderPizza()
+  abstract Pizza createPizza()
 }
 
-PizzaFactory <-- PizzaStore
+%% ---
 
+Ingredient <|.. FrozenClams
+Ingredient <|.. FreshClams
+Ingredient <|.. ThickCrustDough
+
+class Ingredient {
+  <<interface>>
+}
+%% ---
+IngredientFactor <|.. CairoIngredientFactory
+IngredientFactor <|.. NYIngredientFactory
+
+class IngredientFactor{
+  <<interface>>
+
+  Ingredient createIngredient()
+}
 ```
