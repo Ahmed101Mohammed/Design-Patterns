@@ -9,28 +9,40 @@ can use them as a reference if you want.
 
 ### Strategy Pattern
 The following are examples on **Strategy Pattern**:  
-| Implementation                             | OOD diagram                                                     |
-|--------------------------------------------|-----------------------------------------------------------------|
-| [**SimUDuck**](./src/SimUDuck/)            | [**SimUDuck**](./src/SimUDuck/documentation/OOD.png)            |
-|                                            | [**Adventure Game**](./src/AdventureGame/documentation/OOD.png) |
-| [**Payment System**](./src/PaymentSystem/) |                                                                 |
+- SimUDuck.
+  [Diagram](./src/SimUDuck/documentation/OOD.png) | 
+  [Implementation](./src/SimUDuck/SimUDuck.ts)
 
+- Adventure Game.
+  [Diagram](./src/AdventureGame/documentation/OOD.png)
+
+- Payment System.
+  [Implementation](./src/PaymentSystem/PaymentSystem.ts)
+  
 ### Observer Pattern
 The following are examples on **Observer Pattern**:  
-| Implementation                              | OOD diagram                                                                                               |
-|---------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [**Weather-O-Rama**](./src/Weather-O-Rama/) | [**Weather-O-Rama**](./src/Weather-O-Rama/documentation/OOD.png)                                          |
-|                                             | [**Factory Production Monitoring System**](./src/FactoryProductionMonitoringSystem/documentation/OOD.png) |
+- Weather-O-Rama.
+  [Diagram](./src/Weather-O-Rama/documentation/OOD.png) | 
+  [Implementation](./src/Weather-O-Rama/Weather-O-Rama.ts)
+
+- Factory Production Monitoring System.
+  [Diagram](./src/FactoryProductionMonitoringSystem/documentation/OOD.png) 
 
 ### Decorator Pattern
 The following are examples on **Decorator Pattern**:
-| Implementation                              | OOD diagram                                                                                               |
-|---------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [**StarbuzzCoffee**](./src/StarbuzzCoffee/) | [**StarbuzzCoffee**](./src/StarbuzzCoffee/documentation/OOD.png)                                          |
+- StarbuzzCoffee.
+  [Diagram](./src/StarbuzzCoffee/documentation/OOD.png) | 
+  [Implementation](./src/StarbuzzCoffee/StarbuzzCoffee.ts)
 
 ### Factory Patterns (Method Factory Pattern & Abstract Factory Pattern)
 The following are examples on **Factory Patterns**:
-- Pizza Store. [Diagram](./src/PizzaStore/documentation/OOD.md) | [Implementation](./src/PizzaStore/main.ts)
+- Pizza Store. 
+  [Diagram](./src/PizzaStore/documentation/OOD.md) | 
+  [Implementation](./src/PizzaStore/main.ts)
+
+- Game Session Luncher. 
+  [Diagram](./src/GameSessionLuncher/documentation/OOD.md) | 
+  [Implementation](./src/GameSessionLuncher/src/main.ts)
 
 ### Composed Patterns
 The following are examples that contain a composition of patterns:
