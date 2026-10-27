@@ -4,6 +4,8 @@ function main():void
 {
   const store = new CairoStylePizzaStore();
   store.orderPizza('pepperoni');
+  console.log("---------");
+  store.orderPizza('cheese');
 }
 
 main()

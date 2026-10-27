@@ -28,6 +28,10 @@ The following are examples on **Decorator Pattern**:
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [**StarbuzzCoffee**](./src/StarbuzzCoffee/) | [**StarbuzzCoffee**](./src/StarbuzzCoffee/documentation/OOD.png)                                          |
 
+### Factory Patterns (Method Factory Pattern & Abstract Factory Pattern)
+The following are examples on **Factory Patterns**:
+- Pizza Store. [Diagram](./src/PizzaStore/documentation/OOD.md) | [Implementation](./src/PizzaStore/main.ts)
+
 ### Composed Patterns
 The following are examples that contain a composition of patterns:
 - Smart Document Processing System. [Diagram](./src/SmartDocumentProcessingSystem/documentation/OOD.md)

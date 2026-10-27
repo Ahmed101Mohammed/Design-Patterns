@@ -1,10 +1,9 @@
 ```mermaid
 classDiagram
 IngredientFactor <-- Pizza
-Pizza <|.. NYCheesePizza
-Pizza <|.. CairoCheesePizza
 Pizza <|.. CheesePizza
 Pizza <|.. PepperoniPizza
+Pizza <|.. GreekPizza
 
 class Pizza {
   <<interface>>
@@ -12,6 +11,7 @@ class Pizza {
   bake()
   cut()
   box()
+  addIngrediant(Ingrediant ingrediant)
 }
 
 %% ---
@@ -28,9 +28,14 @@ class PizzaStore {
 
 %% ---
 
-Ingredient <|.. FrozenClams
-Ingredient <|.. FreshClams
-Ingredient <|.. ThickCrustDough
+Ingredient <|.. Dough
+Ingredient <|.. Sauce
+Ingredient <|.. Cheese
+Ingredient <|.. Pepperoni
+Ingredient <|.. Clams
+
+Cheese <|.. CairoCheese
+Cheese <|.. NYCheese
 
 class Ingredient {
   <<interface>>
@@ -41,7 +46,11 @@ IngredientFactor <|.. NYIngredientFactory
 
 class IngredientFactor{
   <<interface>>
-
-  Ingredient createIngredient()
+  Dough createDough();
+  Sauce createSauce();
+  Cheese createCheese();
+  Veggies[] createVeggies();
+  Pepperoni createPepperoni();
+  Clams createClam();
 }
 ```
