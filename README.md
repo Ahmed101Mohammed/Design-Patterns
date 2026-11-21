@@ -44,6 +44,11 @@ The following are examples on **Factory Patterns**:
   [Diagram](./src/GameSessionLuncher/documentation/OOD.md) | 
   [Implementation](./src/GameSessionLuncher/src/main.ts)
 
+### Singleton
+The following are examples on **Singileton Pattern**:
+- Choc-O-Holic.
+  [Implementation](./src/Choc-O-Holic/main.ts)
+  
 ### Composed Patterns
 The following are examples that contain a composition of patterns:
 - Smart Document Processing System. [Diagram](./src/SmartDocumentProcessingSystem/documentation/OOD.md)
